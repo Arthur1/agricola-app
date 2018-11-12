@@ -10,7 +10,7 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			&copy; 2018 Arthur
+			&copy; 2018 ぶらつき学生連盟 Arthur
 		</div>
 	</div>
 </footer>
