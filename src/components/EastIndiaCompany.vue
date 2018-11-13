@@ -14,6 +14,12 @@
           <img class="leftoveritems" :class="{ 'leftoveritems-disabled': items.includes(i) }" :src="icon_src[i]">
         </div>
       </div>
+      <h2 class="green-text">履歴</h2>
+      <ul class="collection">
+        <li class="collection-item" v-for="(item, index) in items">
+          {{index + 1}}回目 <span class="teal-text">{{allItemNames[item]}}を手に入れました</span>
+        </li>
+      </ul>
     </div>
     <div id="confirmModal" class="modal">
       <div class="modal-content">
@@ -56,7 +62,8 @@
           require(`@/assets/7.png`),
           require(`@/assets/8.png`),
           require(`@/assets/9.png`)
-        ]
+        ],
+        allItemNames: allItemNames
       }
     },
     mounted() {
@@ -92,9 +99,5 @@ h2 {
 }
 .leftoveritems-disabled {
   opacity: 0.25;
-}
-.picktoast-1::before {
-  content: url('/assets/1.png');
-  display: inline-block;
 }
 </style>
