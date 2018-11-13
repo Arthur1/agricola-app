@@ -5,8 +5,8 @@
         東インド会社の品物ランダマイザです。ラウンドのはじめに「品物を引く」ボタンを押してください。
       </p>
       <div class="center-align">
-        <button class="btn btn-large waves-effect waves-light teal" :disabled="items.length === 9" @click="pickItem">品物を引く<i class="material-icons right">get_app</i></button>
-        <a class="btn btn-large waves-effect waves-light red modal-trigger" href="#confirmModal">リセット<i class="material-icons right">delete</i></a>
+        <button class="btn waves-effect waves-light teal" :disabled="items.length === 9" @click="pickItem">品物を引く<i class="material-icons right">get_app</i></button>
+        <a class="btn waves-effect waves-light red modal-trigger" href="#confirmModal">リセット<i class="material-icons right">delete</i></a>
       </div>
       <h2 class="green-text">残りの品物</h2>
       <div class="row">
